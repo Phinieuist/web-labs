@@ -1,0 +1,25 @@
+.card {
+	font-family: sans-serif;
+	border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    width: 500px;
+    padding: 5px 16px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.7);
+}
+
+.textInformation{
+	margin-top: 10px	
+}
+
+.info {
+	text-align: center;
+	font-family: sans-serif;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab2</title>
+	<script src="Lr2_script.js"></script>
+	<link rel="stylesheet" href="Lr2.css">
+</head>
+<body>
+	<div class="mainArea">
+		<div class="info">
+			<div class="inside">
+				<p>Вызов функций происходит как через консоль, так и через форму</p>
+				<p>Есть 3 вызова функций через консоль:</p>
+				<li>RetArg(arg) - возвращает переданный аргумент</li>
+				<li>Summ(arg1, arg2) - возвращает сумму переданных аргументов</li>
+				<li>Sqr() - возвращает квадраты значений массива и начальный массив</li>
+				<p>Функция возврата квадрата значений массива и начального массива вызывается только из консоли</p>
+			</div>			
+		</div>
+
+		<form name="form1">
+			<div class="inside">
+				<p>Функция возврата переданного аргумента</p>
+				<p>Введите значение: <input type="text" name="arg_ret"> <input type="button" name="func1" value="Вернуть аргумент" onclick="RetArgF(form1)"></p>
+				<p>Результат: <input type="text" name="res1" readonly="true"></p>
+			</div>
+		<br>
+			<div class="inside">
+				<p>Функция возврата суммы переданных элементов</p>
+				<p>Введите значения: <input type="text" name="arg_summ1"> и <input type="text" name="arg_summ2"> <input type="button" name="func2" value="Вернуть сумму" onclick="SummF(form1)"></p>
+				<p><input type="radio" name="checkbox" value="string" checked="true"> Складывать как строки</p>
+				<p><input type="radio" name="checkbox" value="number"> Складывать как числа (если строку можно преобразовать в число, она преобразуется)</p>
+				<p><input type="radio" name="checkbox" value="number_or_zero"> Складывать как числа (если встречено не число, то оно заменяется на ноль)</p>
+				<p>Результат: <input type="text" name="res2" readonly="true"></p>
+			</div>
+			<div class="inside">
+				<p><input type="button" name="clear" value="Очистить" onclick="ClearForm(form1)"></p>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
